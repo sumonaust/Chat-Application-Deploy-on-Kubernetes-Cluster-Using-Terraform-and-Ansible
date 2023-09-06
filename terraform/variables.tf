@@ -59,7 +59,7 @@ resource "aws_instance" "rockatapp" {
   count = 3
   ami           = "ami-086df58ea1b1ad56a"
   instance_type = "t3.small"
-  key_name      = "RjeKeys"
+  key_name      = "Key"
   
   # Attach the security group to the instances
   vpc_security_group_ids = [aws_security_group.rockatapp.id]
